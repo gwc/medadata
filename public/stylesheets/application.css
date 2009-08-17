@@ -1,0 +1,189 @@
+body{
+	margin: auto;
+	padding: 0px;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "Lucida Grande",Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	
+}
+h1{
+	font-size:24px;
+	font-weight:400;
+	
+}
+/*-------------------------------------------------
+Module BAR
+-------------------------------------------------*/
+
+#module_bar{
+	padding-left:35px;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 10px;
+	height: 25px;
+	vertical-align: middle
+	
+}
+#module_bar p{
+	padding-top:7.5px;
+}
+
+/*-------------------------------------------------
+HEADER
+-------------------------------------------------*/
+
+#header{
+	background-color:#C5E2E9 ;
+	height: 72px;
+}
+
+#header h3{
+
+	padding-top:7px;
+	padding-right:20px;
+	padding-bottom:7px;
+	padding-left:25px;
+	text-align: right;
+	line-height:14px;
+	vertical-align: baseline;
+	width:300px;
+	height: 16.2333px;
+	position: relative;
+	display: block;
+	float:right;
+}
+
+#header h1{
+	padding-left: 5px;
+	text-align: left;
+	line-height:30px;
+	vertical-align:baseline;
+
+	margin-left:30px;
+	padding-bottom:10px;
+	position: static;
+	display: block;
+	
+}
+
+#Tabs{
+	font-size: 16px;
+	line-height: 20px;
+	height:25px;
+	margin-right:25px;
+	margin-left:30px;
+	position:static;
+	display:block;
+}
+#Tabs ul{
+	color:#222222;
+	
+}
+#MainTabs li{
+	display: inline;
+	list-style-type:none;
+	list-style-image:none;
+	
+}
+
+#MainTabs a{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 13px;
+	background-color: 	#42577B;
+	width: 44.35px;
+	height: 13px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 6px;
+	padding-left:8px;
+	border: 1px 1px 1px 1px;
+	border-style: solid;
+	text-decoration: none;
+	
+}
+
+/*-------------------------------------------------
+HEADER
+-------------------------------------------------*/
+#Wrapper{
+	margin: 0 auto;
+	padding: 12px 23px 0 30px;
+	background-color: #E5E5E5;
+	height:774px;
+}
+table.layout {
+  clear: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.layout td.left,
+table.layout td.right {
+  vertical-align: top;
+  padding: 0;
+}
+
+table.layout td.left {
+  width: 70%;
+}
+
+table.layout td.right {
+  width: 30%;
+}
+
+div.Left {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 70%;
+	float: left;
+	}
+
+div.Right {
+	margin: 0px 0 0 0;
+	padding: 0;
+	text-align: left;
+	/*position: absolute;*/
+	float: left;
+	width: 30%;
+	}
+
+table.layout td.left div.Left,
+table.layout td.right div.Right {
+  width: auto;
+  float: none;
+}
+
+.col {
+	padding: 0 20px;
+	text-align: left;
+}
+
+.Left .col,
+.Full .col {
+	padding: 0 8px 0 0;
+  background: #fff url(/images/right-bg.gif) right repeat-y;
+  position: relative;
+}
+
+.Left .innercol,
+.Full .innercol {
+  padding: 15px 60px 20px 23px;
+}
+
+div.Left div.bottom,
+div.Full div.bottom {
+  background: url(/images/bottom-bg.gif) top right no-repeat;
+  font-size: 8px;
+}
+
+div.Right .col {
+	min-width: 200px;
+	padding: 0 0 0 9px;
+}
+
+  
+

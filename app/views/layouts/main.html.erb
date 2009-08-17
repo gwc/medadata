@@ -1,29 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
- 
-  <title>MedaData Version 0.1</title>
-  <%= stylesheet_link_tag 'scaffold' %>
-  
-</head>
-<body>
-	<div id="container">
-		<div id="user_nav">
-			<%= link_to "Register", users_path %>
-		<div>
-		
-				
-
-
-
-
-
-
-
-
-<%= yield %>
-
-</body>
+	<head>
+		<title>
+			MedaData Version 0.1
+		</title><%= stylesheet_link_tag 'reset' %><%= stylesheet_link_tag 'application' %>
+	</head>
+	<body>
+		<div id="module_bar">
+			<p>
+				Laboratory | Pharmacy | Public Health | DOT | TB | HIV | OI/STI | In Patient | Out Patient | VCT | Chronic Care | Reporting | Human Resources | Infrastructure
+			</p>
+		</div>
+		<div id="header">
+			<h3>
+				<% if current_user %><%= link_to "Edit Profile", edit_user_path(:current) %> | <%= link_to "Log-out", logout_path %><% else %><%= link_to "Register", new_user_path %> | <%= link_to "Login", login_path %> <% end %>
+			</h3>
+			<h1>
+				MEDADATA 
+			</h1>
+			<div id="Tabs">
+				<ul id="MainTabs">
+					<li>
+						<a href="#" class="current" title="A list of all your current activity in MEDADATA">Dashboard</a>
+					</li>
+					<li>
+						<a href="#" title="">Scheduler</a>
+					</li>
+					<li>
+						<a href="#" title="My Patient">My Patients</a>
+					</li>
+					<li style="float: right">
+						<a href="#" title="Application Settings">Settings</a>
+					</li>
+					<li style="float: right">
+						<a href="#">Search</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="Wrapper" style="position: relative;">
+			<div id="screen_body" class="container">
+				<table class="layout">
+					<tbody>
+						<tr>
+							<td class="left">
+								<div class="Left">
+									<div class="col">
+										<%= yield %>
+									</div>
+									<div class="bottom"></div>
+									<div id="medadata_badge_footer" class="footer">
+								</div>
+							</td>
+							<td class="right">
+								<h1> right side content </h1>
+							</td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
 </html>
