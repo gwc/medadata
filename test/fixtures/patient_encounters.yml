@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  start_date: 2009-09-13 14:40:52
+  patient_id: 
+  provider_id: 
+  institution_id: 
+  notes: MyText
+
+two:
+  start_date: 2009-09-13 14:40:52
+  patient_id: 
+  provider_id: 
+  institution_id: 
+  notes: MyText
