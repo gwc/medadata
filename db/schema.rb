@@ -9,10 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090815055415) do
+ActiveRecord::Schema.define(:version => 20090913204052) do
 
   create_table "institutions", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "patient_encounters", :force => true do |t|
+    t.datetime "start_date"
+    t.integer  "patient_id"
+    t.integer  "provider_id"
+    t.integer  "institution_id"
+    t.text     "notes"
+    t.integer  "encounter_type_id"
+    t.integer  "encounter_reason_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
