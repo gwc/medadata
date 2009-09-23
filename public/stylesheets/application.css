@@ -351,13 +351,32 @@ padding: 15px 15px 15px 15px;
 Patients
 *********************************/
 .patient_listing{
+	
 	padding: 15px 15px 15px 15px;
-
 }
 
 
+.patient_search{
 
+padding: 15px 15px 15px 15px;
+font-size: 14px;	
+}
 
+.patient_search h1{
+	font-size: 14px;
+}
+
+.patient_search p{
+	color:#666666;
+}
+.patient_search .input{
+	width: 478px;
+	height: 17px;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom:10px;
+
+}
 
 
 /********************************

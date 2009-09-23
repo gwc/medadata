@@ -1,4 +1,15 @@
-<div class="patient_listing">
+
+
+<div class="patient_search">
+<% form_tag(patients_path, :method => "get") do %>
+  <h1>Search for a patient</h1>
+  <%= text_field_tag(:search, nil, :class=>'input') %>
+  <%= submit_tag("Search", :class=>'button') %>
+<% end %>
+<p>Enter your search terms above to search for a patient. </p>	
+</div>
+	
+<div class="patient_listing">	
 <h1>Listing patients</h1>
 
 <table>

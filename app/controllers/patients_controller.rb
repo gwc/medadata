@@ -3,7 +3,18 @@ class PatientsController < ApplicationController
   # GET /patients
   # GET /patients.xml
   def index
-    @patients = Patient.all
+    if params[:search]
+        @patients = Patient.find(:all, :conditions => ['last_name LIKE ?',
+          "%#{params[:search]}%"], :limit => 50)
+    else
+      @patients = Patient.find(:all,:limit =>50)
+    end
+    
+    
+    
+    
+    
+   
 
     respond_to do |format|
       format.html # index.html.erb
