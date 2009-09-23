@@ -1,16 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.home "home", :controller => "home",:action=>"index"
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
   map.resources :user_sessions
-
   map.resources :users
-
   map.resources :providers
-
   map.resources :institutions
-
   map.resources :patients
-
+  map.resources :patient_encounters
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -52,5 +49,5 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  map.root :controller => "home"
+  map.root :login
 end

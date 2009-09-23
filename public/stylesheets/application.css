@@ -140,6 +140,7 @@ div.Left {
 	text-align: left;
 	width: 70%;
 	float: left;
+	w
 	}
 
 div.Right {
@@ -190,9 +191,211 @@ div.Right .col {
 /****************************************
 Login 
 *****************************************/
+div#LogoBox {
+	
+margin-bottom:15px;
+}
+div#LogoBox p {
+	text-align:center;
+}
+div#LogoBox img {
+text-align:center;
+margin-top:0px;
+margin-top:0px;
+padding:5px 0 0;
 
-#login_dialog{
-	border: 5px solid #42577B;
+}
+div#LogoBox.white img {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFFFFF none repeat scroll 0 0;
+padding:10px;
+}
+div#LogoBox img {
+
+max-width:300px;
+}
+
+body.login {
+background-color:#E5E5E5;
+color:#000000;
+}
+body.login a:hover {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent none repeat scroll 0 0;
+color:#0033CC;
+text-decoration:underline;
+}
+body.login div#LogoBox {
+margin-top:50px;
+}
+body.login div.login_dialog {
+background-color:#F5F5F5;
+}
+body.login div.login {
+background-color:#F5F5F5;
+border:10px solid #CCCCCC;
+font-family:lucida grande,verdana;
+font-size:12px;
+margin:50px auto;
+padding:20px;
+text-align:left;
+width:400px;
+}
+body.login div.login p {
+margin:0 0 15px;
+padding:0;
+}
+body.login div.login div.flash {
+font-size:12px;
+margin:15px 0;
+padding:7px 5px;
+}
+body.login div.login div.error {
+background-color:#F5E6E6;
+border-bottom:1px solid #990000;
+border-top:1px solid #990000;
+color:#990000;
+}
+body.login div.login div.confirm {
+background-color:#E6F5EA;
+border-bottom:1px solid #339933;
+border-top:1px solid #339933;
+color:#339933;
+}
+body.login div.login h1 {
+color:#000000;
+font-size:16px;
+margin:0 0 20px;
+padding:0;
+}
+body.amnesia div.login h1 {
+margin-bottom:5px;
+}
+body.login div.login h2 {
+color:#000000;
+font-size:12px;
+margin:0 0 2px;
+padding:0;
+}
+body.login div.login input {
+font-size:14px;
+margin-bottom:10px;
+padding:3px;
+width:275px;
+}
+body.login div.login label {
+margin-bottom:10px;
+}
+body.login div.login label input {
+margin-bottom:0;
+}
+body.login div.login input.auto {
+width:auto;
+}
+body.login div.login input.button {
+font-size:14px;
+margin:10px 0 0;
+padding:3px;
+width:auto;
+}
+body.login div.login div.extras {
+border-top:1px dashed #999999;
+margin-top:20px;
+padding-top:10px;
+}
+body.login div.login div.extras ul {
+margin:0 0 0 17px;
+padding:0;
+}
+body.login div.login div.extras ul li {
+font-size:12px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:square;
+padding-bottom:3px;
+}
+body.amnesia div.login {
+width:550px;
+}
+body.amnesia div.login div.note {
+border-left:3px solid orange;
+float:right;
+font-size:12px;
+margin-left:20px;
+padding-left:10px;
+width:200px;
+}
+body.amnesia div.login input {
+margin-bottom:0;
+}
+body.amnesia div.login input.button {
+margin-bottom:25px;
 }
 
 
+/********************************
+home page
+*********************************/
+div#welcome {
+padding: 15px 15px 15px 15px;
+	
+}
+
+
+
+/********************************
+Patients
+*********************************/
+.patient_listing{
+	padding: 15px 15px 15px 15px;
+
+}
+
+
+
+
+
+
+/********************************
+Flash
+*********************************/
+#Flash {
+border:1px solid #CCCCCC;
+font-size:14px;
+margin-bottom:12px;
+padding:5px 5px 5px 30px;
+text-align:left;
+}
+.login #Flash {
+font-size:12px;
+margin-top:12px;
+}
+#Flash.flash_notice {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#E2F9E3 url(/images/alertgood_icon.gif) no-repeat scroll left center;
+border-color:#99CC99;
+color:#006600;
+}
+#Flash.flash_alert {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#CC0000 url(/images/alertbad_icon.gif) no-repeat scroll left center;
+border-color:#CC9999;
+color:#FFFFFF;
+}
+#Flash.flash_alert a {
+color:#FFFFFF;
+}
+#Flash.flash_alert a:hover {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#000000 none repeat scroll 0 0;
+}

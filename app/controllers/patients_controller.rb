@@ -1,4 +1,5 @@
 class PatientsController < ApplicationController
+  layout 'main'
   # GET /patients
   # GET /patients.xml
   def index

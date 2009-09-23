@@ -14,6 +14,7 @@
 		</div>
 		<div id="header">
 			<h3>
+				<%= current_user.username %>
 				<% if current_user %><%= link_to "Edit Profile", edit_user_path(:current) %> | <%= link_to "Log-out", logout_path %><% else %><%= link_to "Register", new_user_path %> | <%= link_to "Login", login_path %> <% end %>
 			</h3>
 			<h1>
@@ -22,13 +23,15 @@
 			<div id="Tabs">
 				<ul id="MainTabs">
 					<li>
-						<a href="#" class="current" title="A list of all your current activity in MEDADATA">Dashboard</a>
+						<%= link_to "Dashboard", patient_encounters_path %>
+						
 					</li>
 					<li>
 						<a href="#" title="">Scheduler</a>
 					</li>
 					<li>
-						<a href="#" title="My Patient">My Patients</a>
+						<%= link_to "My Patients", patients_path%>
+					
 					</li>
 					<li style="float: right">
 						<a href="#" title="Application Settings">Settings</a>
@@ -54,7 +57,7 @@
 								</div>
 							</td>
 							<td class="right">
-								<h1> right side content </h1>
+							<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="170" height="270" id="kiva badge 1.2" align="middle"><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="false" /><param name="movie" value="http://www.humsara.com/projects/kiva/kivabadge.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><param name=FlashVars value="uid=gavin5556"><embed src="http://www.humsara.com/projects/kiva/kivabadge.swf" quality="high" bgcolor="#ffffff" width="170" height="270" name="HumsaraKivaBadge" align="middle" allowScriptAccess="always" allowFullScreen="false" FlashVars="uid=gavin5556" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" /></object>
 							</td>
 							
 						</tr>
