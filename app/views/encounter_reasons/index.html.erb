@@ -1,0 +1,20 @@
+<h1>Listing encounter_reasons</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+
+<% @encounter_reasons.each do |encounter_reason| %>
+  <tr>
+    <td><%=h encounter_reason.description %></td>
+    <td><%= link_to 'Show', encounter_reason %></td>
+    <td><%= link_to 'Edit', edit_encounter_reason_path(encounter_reason) %></td>
+    <td><%= link_to 'Destroy', encounter_reason, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New encounter_reason', new_encounter_reason_path %>

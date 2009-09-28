@@ -1,0 +1,2 @@
+module EncounterTypesHelper
+end

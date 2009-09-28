@@ -1,0 +1,20 @@
+<h1>Listing encounter_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+
+<% @encounter_types.each do |encounter_type| %>
+  <tr>
+    <td><%=h encounter_type.description %></td>
+    <td><%= link_to 'Show', encounter_type %></td>
+    <td><%= link_to 'Edit', edit_encounter_type_path(encounter_type) %></td>
+    <td><%= link_to 'Destroy', encounter_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New encounter_type', new_encounter_type_path %>

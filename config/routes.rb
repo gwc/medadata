@@ -1,4 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :encounter_reasons
+
+  map.resources :encounter_types
+
+  map.resources :provider_roles
+
+  map.resources :roles
+
   map.home "home", :controller => "home",:action=>"index"
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"

@@ -1,5 +1,13 @@
 <div class="patient_encounter_listing">
-<h1>Listing Patients Encounters</h1>
+
+<div class="page_header">
+	<div class="page_header_links">
+		<%= link_to 'New patient encounter', new_patient_encounter_path %> |
+		<%= link_to 'New patient', new_patient_path %>
+	</div>
+	<h1>Listing Patients Encounters</h1>
+</div>
+
 
 <table>
   <tr>
@@ -15,12 +23,12 @@
 <% @patient_encounters.each do |patient_encounter| %>
   <tr>
     <td><%=h patient_encounter.start_date %></td>
-    <td><%=h patient_encounter.patient_id %></td>
-    <td><%=h patient_encounter.provider_id %></td>
-	<td><%=h patient_encounter.institution_id %></td>
+    <td><%=h patient_encounter.patient.last_name %></td>
+    <td><%=h patient_encounter.provider.last_name %></td>
+	<td><%=h patient_encounter.institution.name %></td>
 	<td><%=h patient_encounter.notes %></td>
-	<td><%=h patient_encounter.encounter_type_id %></td>
-	<td><%=h patient_encounter.encounter_reason_id %></td>
+	<td><%=h patient_encounter.encounter_type.description %></td>
+	<td><%=h patient_encounter.encounter_reason.description %></td>
 
     <td><%= link_to 'Show', patient_encounter %></td>
     <td><%= link_to 'Edit', edit_patient_encounter_path(patient_encounter) %></td>
@@ -31,5 +39,5 @@
 
 <br />
 
-<%= link_to 'New patient encounter', new_patient_encounter_path %>
+
 </div>

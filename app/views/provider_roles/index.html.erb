@@ -1,0 +1,22 @@
+<h1>Listing provider_roles</h1>
+
+<table>
+  <tr>
+    <th>Role</th>
+    <th>Provider</th>
+  </tr>
+
+<% @provider_roles.each do |provider_role| %>
+  <tr>
+    <td><%=h provider_role.role_id %></td>
+    <td><%=h provider_role.provider_id %></td>
+    <td><%= link_to 'Show', provider_role %></td>
+    <td><%= link_to 'Edit', edit_provider_role_path(provider_role) %></td>
+    <td><%= link_to 'Destroy', provider_role, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New provider_role', new_provider_role_path %>

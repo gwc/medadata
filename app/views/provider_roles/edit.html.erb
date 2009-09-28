@@ -1,0 +1,20 @@
+<h1>Editing provider_role</h1>
+
+<% form_for(@provider_role) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :role_id %><br />
+    <%= f.text_field :role_id %>
+  </p>
+  <p>
+    <%= f.label :provider_id %><br />
+    <%= f.text_field :provider_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @provider_role %> |
+<%= link_to 'Back', provider_roles_path %>

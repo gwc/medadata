@@ -1,4 +1,6 @@
+<div class="page_header">
 <h1>New Patient Encounter</h1>
+</div>
 <br />
 <% form_for(@patient_encounter) do |f| %>
   <%= f.error_messages %>
@@ -37,6 +39,27 @@
 	  {:include_blank => 'Please Select'}
 	) %>
 </p>
+<p>
+    <%= f.label :encounter_type_id %><br />
+  	<%= collection_select(:patient_encounter,    
+	  :encounter_type_id,    
+	  @encounter_types,    
+	  :id,    
+	  :description,    
+	  {:include_blank => 'Please Select'}
+	) %>
+</p>
+<p>
+    <%= f.label :encounter_reason_id %><br />
+  	<%= collection_select(:patient_encounter,    
+	  :encounter_reason_id,    
+	  @encounter_reasons,    
+	  :id,    
+	  :description,    
+	  {:include_blank => 'Please Select'}
+	) %>
+</p>
+
 <p>
 	<%= f.label :notes %><br/>
 	<%= f.text_area :notes%>

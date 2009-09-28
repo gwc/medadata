@@ -29,6 +29,8 @@ class PatientEncountersController < ApplicationController
     @patients = Patient.all
     @providers = Provider.all
     @institutions = Institution.all
+    @encounter_reasons = EncounterReason.all
+    @encounter_types = EncounterType.all
 
     respond_to do |format|
       format.html # new.html.erb

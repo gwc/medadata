@@ -1,0 +1,13 @@
+<p>
+  <b>Role:</b>
+  <%=h @provider_role.role_id %>
+</p>
+
+<p>
+  <b>Provider:</b>
+  <%=h @provider_role.provider_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_provider_role_path(@provider_role) %> |
+<%= link_to 'Back', provider_roles_path %>
