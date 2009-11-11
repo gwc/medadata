@@ -350,29 +350,31 @@ padding: 15px 15px 15px 15px;
 *********************************/ 
 .page_header{
 	font-size: 14px;
-	height: 20px;
+	height: 25px;
 	background-color:#EDF3FE;
 	padding: 5px 15px 5px 5px;
 }
 
-.page_header h1{
-width: 350px;	
-	
+.page_header_title {
+	float:left;
+	width:400px;
 }
 
 .page_header_links {
 	font-family: verdana;
 	font-size: 11px;
 	text-align:right;
-padding: 13px 3px 0px 0px;
-width:300px;
-float:right;
+	padding: 5px 3px 0px 0px;
+	width:300px;
+	float:right;
 }
 
 .page_header_links a{
 	color: #FF0000;
-
 }
+
+
+
 /********************************
 Patients
 *********************************/

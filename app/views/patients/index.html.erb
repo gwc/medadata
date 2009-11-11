@@ -16,14 +16,14 @@
   <tr>
     <th>Last name</th>
     <th>First name</th>
-    <th>Dob</th>
+    <th>Age</th>
   </tr>
 
 <% @patients.each do |patient| %>
   <tr>
     <td><%=h patient.last_name %></td>
     <td><%=h patient.first_name %></td>
-    <td><%=h patient.dob %></td>
+    <td><%=h patient.age %></td>
     <td><%= link_to 'Show', patient %></td>
     <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
     <td><%= link_to 'Destroy', patient, :confirm => 'Are you sure?', :method => :delete %></td>
